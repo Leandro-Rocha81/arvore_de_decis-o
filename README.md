@@ -37,7 +37,7 @@ cd arvore_de_decisao
 2. **Instale as dependências:**
 
 ```bash
-pip install pandas numpy
+pip install -r requirementes.txt
 ```
 
 3. **Execute o código:**
@@ -52,9 +52,10 @@ A árvore de decisão será exibida no terminal, representada como um dicionári
 ## 📂 Arquivos
 
 - `main.py`: implementação completa da árvore de decisão.
-- `explicacao.pd`: arquivo com a explicação técnica
+- `explicacao_arvore_decisao.pdf`: arquivo com a explicação técnica
 - `README.md`: este arquivo, com instruções e descrição do projeto.
 - `.gitignore`: arquivos que o Git deve ignorar
+- `requirementes.txt`: arquivo de texto usado em projetos Python para listar todos os pacotes (bibliotecas) que o projeto precisa para funcionar corretamente.
 
 ## 💡 Exemplo de saída
 
