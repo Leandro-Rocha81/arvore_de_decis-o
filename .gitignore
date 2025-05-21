@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Arquivos do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Pastas de ambientes virtuais
+venv/
+.env/
+.venv/
+
+# Configurações do VSCode
+.vscode/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos gerados automaticamente
+*.pdf

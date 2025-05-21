@@ -1,5 +1,6 @@
 import math
 import pandas as pd
+import numpy as np
 
 # Cálculo da entropia para um conjunto de dados
 def entropia(data_frame, classes, atributo_classe):
@@ -57,6 +58,7 @@ def construir_arvore(data_frame, atributos, atributo_classe, nivel=0):
             arvore[melhor_atributo][valor] = data_frame[atributo_classe].mode()[0]
         else:
             novos_atributos = [a for a in atributos if a != melhor_atributo]
+            valor = int(valor) if isinstance(valor, (np.integer, np.int64)) else valor
             arvore[melhor_atributo][valor] = construir_arvore(sub_data, novos_atributos, atributo_classe, nivel + 1)
 
     return arvore

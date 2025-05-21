@@ -31,19 +31,19 @@ Os dados simulam um cenário simples de marketing, com as seguintes colunas:
 
 ```bash
 git clone https://github.com/Leandro-Rocha81/arvore_de_decis-o.git
-cd nome-do-repositorio
+cd arvore_de_decisao
 ```
 
-2. **Instale as dependências (apenas `pandas` é necessário):**
+2. **Instale as dependências:**
 
 ```bash
-pip install pandas
+pip install pandas numpy
 ```
 
 3. **Execute o código:**
 
 ```bash
-python arvore_decisao.py
+python main.py
 ```
 
 4. **Saída esperada:**
@@ -51,23 +51,24 @@ A árvore de decisão será exibida no terminal, representada como um dicionári
 
 ## 📂 Arquivos
 
-- `arvore_decisao.py`: implementação completa da árvore de decisão.
+- `main.py`: implementação completa da árvore de decisão.
+- `explicacao.pd`: arquivo com a explicação técnica
 - `README.md`: este arquivo, com instruções e descrição do projeto.
+- `.gitignore`: arquivos que o Git deve ignorar
 
 ## 💡 Exemplo de saída
 
 ```python
-{'Escolaridade': {
-    'Médio': 'Não',
-    'Superior completo': {
-        'Estado Civil': {
-            'Casado': 'Sim',
-            'Solteiro': 'Não'
-        }
-    },
-    'Superior incompleto': 'Sim',
-    'Pós-graduação': 'Sim'
-}}
+{'Idade': {22: 'Não',
+           23: 'Não',
+           24: 'Não',
+           27: 'Não',
+           28: 'Sim',
+           30: 'Não',
+           35: 'Sim',
+           36: 'Sim',
+           40: 'Sim',
+           50: 'Sim'}}
 ```
 
 ## 🚀 Possíveis melhorias
